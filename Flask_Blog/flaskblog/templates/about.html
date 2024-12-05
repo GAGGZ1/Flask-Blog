@@ -1,5 +1,49 @@
-
 {% extends "layout.html" %}
 {% block content %}
-    <h1>About Page</h1>
+<div class="container mt-4">
+    <h1 class="mb-4">About Flask Blog</h1>
+    <p>
+        Welcome to Flask Blog, a platform where you can share your thoughts, ideas, and stories with the world. 
+        Whether you're here to write, read, or connect with like-minded individuals, we've got you covered.
+    </p>
+    <h3 class="mt-4">What We Offer</h3>
+    <ul>
+        <li>Create and share your blog posts with ease.</li>
+        <li>Update your profile with a personal touch, including a custom profile picture.</li>
+        <li>Explore content from other users and get inspired.</li>
+        <li>Manage your posts with features like editing and deletion.</li>
+        <li>Enjoy a seamless browsing experience with pagination and user-friendly design.</li>
+    </ul>
+    <h3 class="mt-4">Our Mission</h3>
+    <p>
+        Our mission is to empower individuals to express themselves and connect with others through the art of blogging. 
+        We believe everyone has a story to tell, and this platform is here to amplify your voice.
+    </p>
+    <h3 class="mt-4">Get Started</h3>
+    <p>
+        Ready to dive in? <a href="{{ url_for('users.register') }}">Create an account</a> or <a href="{{ url_for('users.login') }}">log in</a> 
+        to start your blogging journey today!
+    </p>
+    
+    <hr class="my-4">
+
+    <footer class="text-center">
+        <p>Made with ❤️ by <strong>Gagan Chauhan</strong></p>
+        <p>Follow me on:</p>
+        <p>
+            <a href="https://www.instagram.com/9agan/" target="_blank" class="btn btn-outline-primary btn-sm mx-1">
+                Instagram
+            </a>
+            <a href="https://x.com/ChauhanGagan777" target="_blank" class="btn btn-outline-dark btn-sm mx-1">
+                X (Twitter)
+            </a>
+            <a href="https://www.linkedin.com/in/gaganchauhan/" target="_blank" class="btn btn-outline-info btn-sm mx-1">
+                LinkedIn
+            </a>
+            <a href="https://github.com/GAGGZ1" target="_blank" class="btn btn-outline-secondary btn-sm mx-1">
+                GitHub
+            </a>
+        </p>
+    </footer>
+</div>
 {% endblock content %}
